@@ -1,0 +1,29 @@
+<app-header titulo="date time"></app-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-list-header>
+            <ion-label>Datos de Nacimiento</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-datetime display-format="YYYY-MM-DD"
+                          (ionChange)="cambioFecha( $event )"
+                          min="2023-07-12"
+                          max="2024-08-12"></ion-datetime>
+        </ion-item>
+
+        <ion-list-header>
+            <ion-label>Custom DateTime</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-datetime [showDefaultButtons]="true" doneText="Aceptar" (ionChange)="cambioDateTime($event)" 
+                          cancelText="Cancelar"></ion-datetime>
+        </ion-item>
+
+
+
+    </ion-list>
+</ion-content>

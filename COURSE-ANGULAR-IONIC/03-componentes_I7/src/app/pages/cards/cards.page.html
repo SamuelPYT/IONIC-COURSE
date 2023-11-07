@@ -1,0 +1,41 @@
+<!--Uso del componente padre para el titulo-->
+<app-header titulo="Card"></app-header>
+
+<ion-content class="ion-padding">
+
+  <h3>Tipo 1</h3>
+  <!--Card común -->
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card-header>
+      <ion-card-title>Card #1</ion-card-title>
+      <ion-card-subtitle>First first</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+
+  <h3>Tipo 2</h3>
+  <!--Card personalizado #1-->
+  <ion-card>
+    <ion-item color="primary">
+      <ion-icon slot="start" name="pin-outline"></ion-icon>
+      <ion-label>Tarjeta</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+
+  <h3>Tipo 3</h3>
+  <!--Card personalizado #2. Imagen y desc-->
+  <ion-card>
+    <ion-img src="https://images8.alphacoders.com/131/1316637.jpeg"></ion-img>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>

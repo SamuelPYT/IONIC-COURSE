@@ -1,0 +1,39 @@
+
+<app-header titulo="Alert"></app-header>
+
+<ion-content class="ion-padding">
+
+
+<!-- button type 1  -->
+<ion-button (click)="onClick()" expand="block" color="primary">Mostrar Alert</ion-button>
+
+<!-- button type 2 -->
+<ion-button (click)="presentAlertOptions()" expand="block" color="primary"> Alert Options</ion-button>
+
+<!-- button type 3 -->
+<ion-button (click)="presentAlertOk()" expand="block" color="primary"> Alert OK</ion-button>
+
+<!-- button type 4 -->
+<ion-button id="present-alert">Button Form</ion-button>
+<!-- button form v7  -->
+<ion-alert
+  trigger="present-alert"
+  header="Please enter your info"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+></ion-alert>
+
+
+
+
+<!-- button type 5 -->
+<ion-button (click)="presentAlertForm()">Button Form 2</ion-button>
+
+
+
+
+
+
+
+
+</ion-content>
